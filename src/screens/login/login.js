@@ -41,7 +41,7 @@ export default function LogIn({navigation}) {
             <View style={style.inpContainer}>
               <Input secureTextEntry={true} title="Password" />
             </View>
-            <TouchableOpacity style={style.forgotDiv}>
+            <TouchableOpacity onPress={()=>{navigation.navigate("forgotPassword")}} style={style.forgotDiv}>
               <Text style={{color: '#ed5515'}}>Forgot Password?</Text>
             </TouchableOpacity>
             <View style={{marginTop: 30}}>
@@ -73,6 +73,7 @@ export default function LogIn({navigation}) {
                 iconName={FontAwesome}
                 iconTitle="facebook"
                 iconColor="blue"
+                iconBg="#FFFF"
               />
             </View>
             <View style={style.inpContainer}>

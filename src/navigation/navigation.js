@@ -23,6 +23,7 @@ import {Colors} from '../utils/constant';
 import Home from '../screens/home/home';
 import LogIn from '../screens/login/login'
 import Register from '../screens/register/register'
+import ForgotPassword from '../screens/forgotPassword'
 import DrawerNavigation from './drawer';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -37,6 +38,7 @@ const AppNavigator = () => {
           <Stack.Screen name="home" component={Home} />
           <Stack.Screen name="login" component={LogIn} />
           <Stack.Screen name="register" component={Register} />
+          <Stack.Screen name="forgotPassword" component={ForgotPassword} />
           
 
 
