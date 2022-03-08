@@ -51,6 +51,7 @@ export default function LogIn({navigation}) {
                 height={50}
                 radius={25}
                 title="Login"
+                onPress={()=>{navigation.navigate("home")}}
               />
             </View>
             <TouchableOpacity onPress={()=>{navigation.navigate("register")}} style={{marginTop: 10}}>

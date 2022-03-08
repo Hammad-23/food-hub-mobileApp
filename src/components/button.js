@@ -9,7 +9,7 @@ export default function CustomButton(props) {
   }, []);
   return (
     <>
-      <TouchableOpacity
+      <TouchableOpacity {...props}
         style={{
           backgroundColor: props.bgColor,
           borderRadius: props.radius,
